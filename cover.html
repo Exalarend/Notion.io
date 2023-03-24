@@ -1,28 +1,15 @@
-<!-- The grid: four columns -->
+<!DOCTYPE html>
 <iframe frameborder="0" name="iframe_a" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/#playlist/Alex-ander-a/1071">Слушайте <a href='https://music.yandex.ru/users/Alex-ander-a/playlists/1071'>Circle</a> — <a href='https://music.yandex.ru/users/Alex-ander-a'>RedBlackWhite</a> на Яндекс Музыке</iframe>
-<div class="row">
-  <div class="column">
-    <img src="1.jpg" alt="Nature" onclick=https://music.yandex.ru/users/Alex-ander-a/playlists/1027>
-  </div>
-  <div class="column">
-    <img src="2.jpg" alt="Snow" onclick="https://music.yandex.ru/users/Alex-ander-a/playlists/1027">
-  </div>
-  <div class="column">
-    <img src="4.jpg" alt="Mountains" onclick="https://music.yandex.ru/users/Alex-ander-a/playlists/1027;">
-  </div>
-  <div class="column">
-    <img src="5.jpg" alt="Lights" onclick="iframe_a">
-  </div>
-</div>
+<html>
+<body>
 
-<!-- The expanding image container -->
-<div class="container">
-  <!-- Close the image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+<h2>Iframe - Target for a Link</h2>
 
-  <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%">
+<iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
 
-  <!-- Image text -->
-  <div id="imgtext"></div>
-</div>
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+</body>
+</html>
